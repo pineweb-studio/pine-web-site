@@ -38,9 +38,7 @@ a { color: inherit }
 :focus-visible { outline: 3px solid var(--ambar); outline-offset: 3px; border-radius: 6px }
 
 /* Idiomas */
-.en { display: none }
-:root[data-lang="en"] .en { display: revert }
-:root[data-lang="en"] .pt { display: none }
+:root:not([data-lang="en"]) .en, :root[data-lang="en"] .pt { display: none !important }
 
 .wrap { max-width: 1120px; margin: 0 auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r) }
 section { padding-block: 88px }
