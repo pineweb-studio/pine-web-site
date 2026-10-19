@@ -146,7 +146,7 @@ nav a:hover { opacity: 1; color: var(--broto) }
 
 /* Portfólio */
 .cases { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px }
-.case { text-decoration: none; display: grid; gap: 14px }
+.case { text-decoration: none; display: grid; gap: 14px; align-content: start }
 .case-frame { aspect-ratio: 16 / 10; max-width: 100%; border: 3px solid var(--floresta); border-radius: 18px; background: var(--soft); display: grid; grid-template-rows: auto 1fr; overflow: hidden }
 :root[data-theme="dark"] .case-frame { border-color: var(--line) }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .case-frame { border-color: var(--line) } }
@@ -157,6 +157,9 @@ nav a:hover { opacity: 1; color: var(--broto) }
 .case-frame span { display: grid; place-items: center; font: 700 clamp(26px, 4vw, 40px)/1 var(--display); color: var(--accent); letter-spacing: -.02em }
 .case h3 { font-size: 20px; font-weight: 600 }
 .case p { color: var(--muted); font-size: 15px }
+.case-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; min-height: 0; transition: transform .5s }
+.case:hover .case-frame img { transform: scale(1.03) }
+.case-link { color: var(--accent); font-weight: 700; font-size: 15px }
 @media (max-width: 640px) { .cases { grid-template-columns: 1fr } }
 
 /* Perguntas */
@@ -391,14 +394,15 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow"><span class="pt">Portfólio</span><span class="en">Our work</span></span>
-        <h2><span class="pt">Primeiros projetos em produção</span><span class="en">First projects in progress</span></h2>
+        <h2><span class="pt">Primeiros projetos</span><span class="en">First projects</span></h2>
       </div>
       <div class="cases">
         <!-- Trocar o bloco .case-frame por um print do site e o href pelo endereço real -->
-        <a class="case" href="#portfolio">
-          <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><span>Maja Kids</span></div>
+        <a class="case" href="https://maja-kids.pages.dev" target="_blank" rel="noopener">
+          <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><img src="portfolio/maja-kids.webp" alt="Página inicial do site da Maja Kids, com um castelo inflável e o botão Monte sua festa" width="960" height="600" loading="lazy"></div>
           <h3>Maja Kids</h3>
-          <p><span class="pt">Site em produção · em breve no ar</span><span class="en">Website in progress · launching soon</span></p>
+          <p><span class="pt">Locação de brinquedos · catálogo animado e festa montada direto no WhatsApp</span><span class="en">Party rentals · animated catalog and party booked straight on WhatsApp</span></p>
+          <span class="case-link"><span class="pt">Ver site →</span><span class="en">Visit site →</span></span>
         </a>
         <a class="case" href="#portfolio">
           <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><span>Glass Master</span></div>
