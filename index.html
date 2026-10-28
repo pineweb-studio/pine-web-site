@@ -127,7 +127,7 @@ nav a:hover { opacity: 1; color: var(--broto) }
 @media (max-width: 520px) { .dots { grid-template-columns: repeat(3, 1fr); row-gap: 14px } }
 
 /* Planos */
-.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch }
+.plans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: stretch; max-width: 920px }
 .plan { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 30px; display: grid; grid-template-rows: auto auto auto 1fr auto; gap: 14px }
 .plan.featured { background: var(--floresta); color: var(--nevoa); border-color: var(--floresta); position: relative }
 .plan .tag { justify-self: start; font: 600 12px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; padding: 7px 11px; border-radius: 999px; background: var(--soft); color: var(--accent) }
@@ -269,7 +269,7 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
         </div>
         <div class="service">
           <h3><span class="pt">Cuidado todo mês</span><span class="en">Monthly care</span></h3>
-          <p><span class="pt">Nos planos com manutenção, hospedagem, segurança, backup e as pequenas alterações do dia a dia ficam com a gente.</span><span class="en">On our care plans, hosting, security, backups and everyday small updates are all on us.</span></p>
+          <p><span class="pt">No plano com manutenção, hospedagem, segurança, backup e as pequenas alterações do dia a dia ficam com a gente.</span><span class="en">On our care plan, hosting, security, backups and everyday small updates are all on us.</span></p>
         </div>
       </div>
     </div>
@@ -293,7 +293,7 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
             <article class="slide" data-step="0">
               <p class="count"><span class="pt">Passo 1 de 6</span><span class="en">Step 1 of 6</span></p>
               <h3><span class="pt">Conversa</span><span class="en">Say hello</span></h3>
-              <p><span class="pt">Você manda uma mensagem ou e-mail contando sobre o seu negócio, e a gente apresenta os três planos. É aqui que a semente é plantada.</span><span class="en">Send us an email or message about your business, and we walk you through the three plans. This is where the seed gets planted.</span></p>
+              <p><span class="pt">Você manda uma mensagem ou e-mail contando sobre o seu negócio, e a gente apresenta os dois planos. É aqui que a semente é plantada.</span><span class="en">Send us an email or message about your business, and we walk you through our two plans. This is where the seed gets planted.</span></p>
             </article>
             <article class="slide" data-step="1" hidden>
               <p class="count"><span class="pt">Passo 2 de 6</span><span class="en">Step 2 of 6</span></p>
@@ -313,12 +313,12 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
             <article class="slide" data-step="4" hidden>
               <p class="count"><span class="pt">Passo 5 de 6</span><span class="en">Step 5 of 6</span></p>
               <h3><span class="pt">Publicação</span><span class="en">Launch</span></h3>
-              <p><span class="pt">Depois da sua aprovação e dos 50% finais, o site vai ao ar no seu domínio. Nos planos 2 e 3 a gente hospeda e publica. No plano 1 você recebe os arquivos e a gente ajuda a publicar.</span><span class="en">Once you approve and pay the final 50%, your site goes live on your domain. On Plans 2 and 3 we host and launch it. On Plan 1 you get the files and we help you launch.</span></p>
+              <p><span class="pt">Depois da sua aprovação e dos 50% finais, o site vai ao ar no seu domínio. No plano 2 a gente hospeda e publica. No plano 1 você recebe os arquivos e a gente ajuda a publicar.</span><span class="en">Once you approve and pay the final 50%, your site goes live on your domain. On Plan 2 we host and launch it. On Plan 1 you get the files and we help you launch.</span></p>
             </article>
             <article class="slide" data-step="5" hidden>
               <p class="count"><span class="pt">Passo 6 de 6</span><span class="en">Step 6 of 6</span></p>
               <h3><span class="pt">Manutenção</span><span class="en">Ongoing care</span></h3>
-              <p><span class="pt">Nos planos 2 e 3, a gente mantém o site no ar, seguro e atualizado, e faz as mudanças do mês enquanto o seu negócio cresce.</span><span class="en">On Plans 2 and 3 we keep your site online, secure and up to date, and handle your monthly changes while your business grows.</span></p>
+              <p><span class="pt">No plano 2, a gente mantém o site no ar, seguro e atualizado, e faz as mudanças do mês enquanto o seu negócio cresce.</span><span class="en">On Plan 2 we keep your site online, secure and up to date, and handle your monthly changes while your business grows.</span></p>
             </article>
           </div>
           <div class="show-nav">
@@ -343,7 +343,7 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow"><span class="pt">Planos</span><span class="en">Plans</span></span>
-        <h2><span class="pt">Três jeitos de ter o seu site</span><span class="en">Three ways to get your website</span></h2>
+        <h2><span class="pt">Dois jeitos de ter o seu site</span><span class="en">Two ways to get your website</span></h2>
         <p><span class="pt">Todo site sai seguro (HTTPS), com política de privacidade, pensado para acessibilidade e com contrato por escrito.</span><span class="en">Every site launches secure (HTTPS), with a privacy policy, built with accessibility in mind and backed by a written contract.</span></p>
       </div>
       <div class="plans">
@@ -367,26 +367,15 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
             <li><span><span class="pt">Site sob medida com 2 rodadas de revisão</span><span class="en">Custom website with 2 rounds of changes</span></span></li>
             <li><span><span class="pt">Hospedagem e publicação feitas por nós</span><span class="en">Hosting and launch handled by us</span></span></li>
             <li><span><span class="pt">Site seguro (HTTPS), backup e atualizações</span><span class="en">Secure (HTTPS), backups and updates</span></span></li>
-            <li><span><span class="pt">3 mudanças pequenas por mês: foto, texto, preço, telefone</span><span class="en">3 small changes a month: photo, text, price, phone</span></span></li>
-            <li><span><span class="pt">O que passar disso é cobrado à parte</span><span class="en">Anything beyond that is billed separately</span></span></li>
-          </ul>
-          <p class="price"><span class="pt">Valor sob consulta</span><span class="en">Price on request</span></p>
-        </article>
-        <article class="plan">
-          <span class="tag"><span class="pt">Plano 3</span><span class="en">Plan 3</span></span>
-          <h3><span class="pt">Completo</span><span class="en">Complete</span></h3>
-          <p class="for"><span class="pt">Tudo do Plano 2, mais anúncios para trazer clientes até o seu site.</span><span class="en">Everything in Plan 2, plus ads to bring customers to your site.</span></p>
-          <ul>
-            <li><span><span class="pt">Tudo do Plano 2</span><span class="en">Everything in Plan 2</span></span></li>
-            <li><span><span class="pt">Gestão de tráfego pago no Google e na Meta</span><span class="en">Paid ads management on Google and Meta</span></span></li>
-            <li><span><span class="pt">5 mudanças pequenas e 1 grande por mês</span><span class="en">5 small changes and 1 big change a month</span></span></li>
-            <li><span><span class="pt">A verba dos anúncios é paga por você direto ao Google ou à Meta. Anúncios não garantem vendas.</span><span class="en">Ad spend is paid by you directly to Google or Meta. Ads don't guarantee sales.</span></span></li>
+            <li><span><span class="pt">1 mudança grande e 3 pequenas por mês</span><span class="en">1 big change and 3 small changes a month</span></span></li>
+            <li><span><span class="pt">O primeiro mês de manutenção já vem incluso na criação</span><span class="en">Your first month of care is included with the build</span></span></li>
+            <li><span><span class="pt">Fidelidade de 3 ou 6 meses. Depois, renova mês a mês</span><span class="en">3- or 6-month commitment, then month to month</span></span></li>
           </ul>
           <p class="price"><span class="pt">Valor sob consulta</span><span class="en">Price on request</span></p>
         </article>
       </div>
       <div class="rules">
-        <p><span class="pt">Cada plano tem um valor para site simples e outro para site com sistema (back-end), na criação e na mensalidade. O valor exato vem no orçamento. A criação é paga em duas partes: 50% para começar e 50% na entrega. Mudança pequena é trocar foto, texto, preço ou telefone. Mudança grande é mudar a ordem das seções ou refazer uma seção. Mudanças não usadas no mês não acumulam.</span><span class="en">Each plan has one price for a simple site and another for a site with a back-end, both for creation and the monthly fee. The exact price comes in your quote. Creation is paid in two parts: 50% to start and 50% on delivery. A small change is a new photo, text, price or phone. A big change is reordering or rebuilding a section. Unused monthly changes don't roll over.</span></p>
+        <p><span class="pt">Cada plano tem um valor para site simples e outro para site com sistema (back-end), na criação e na mensalidade. O valor exato vem no orçamento. A criação é paga em duas partes: 50% para começar e 50% na entrega. Mudança pequena é trocar texto, cor, foto, preço, telefone, horário ou link. Mudança grande é mudar a ordem das seções, criar ou refazer uma seção, ou adicionar uma página. Mudanças não usadas no mês não acumulam. Funcionalidades novas, como agendamento ou login, recebem um orçamento separado.</span><span class="en">Each plan has one price for a simple site and another for a site with a back-end, both for creation and the monthly fee. The exact price comes in your quote. Creation is paid in two parts: 50% to start and 50% on delivery. A small change is new text, color, photo, price, phone, hours or link. A big change is reordering sections, adding or rebuilding a section, or adding a page. Unused monthly changes don't roll over. New features, like booking or logins, are quoted separately.</span></p>
       </div>
     </div>
   </section>
@@ -443,7 +432,7 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
         </details>
         <details>
           <summary><span class="pt">Posso cancelar o plano mensal?</span><span class="en">Can I cancel my monthly plan?</span></summary>
-          <p><span class="pt">Pode. Com o aviso prévio combinado, você recebe os arquivos do seu site.</span><span class="en">Yes. With the agreed notice, you receive your website files.</span></p>
+          <p><span class="pt">Pode. Depois da fidelidade de 3 ou 6 meses, é só avisar com 30 dias de antecedência, sem multa. Você fica com o site, o domínio e todos os acessos.</span><span class="en">Yes. After your 3- or 6-month commitment, just give us 30 days' notice, with no fee. You keep your site, your domain and all the logins.</span></p>
         </details>
         <details>
           <summary><span class="pt">Vocês atendem fora do Brasil?</span><span class="en">Do you work with US businesses?</span></summary>
