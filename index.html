@@ -145,7 +145,7 @@ nav a:hover { opacity: 1; color: var(--broto) }
 @media (max-width: 900px) { .plans { grid-template-columns: 1fr } }
 
 /* Portfólio */
-.cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px }
+.cases { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 24px }
 @media (max-width: 900px) { .cases { grid-template-columns: repeat(2, 1fr) } }
 .case { text-decoration: none; display: grid; gap: 14px; align-content: start }
 .case-frame { aspect-ratio: 16 / 10; max-width: 100%; border: 3px solid var(--floresta); border-radius: 18px; background: var(--soft); display: grid; grid-template-rows: auto 1fr; overflow: hidden }
@@ -398,23 +398,29 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
         <h2><span class="pt">Primeiros projetos</span><span class="en">First projects</span></h2>
       </div>
       <div class="cases">
-        <!-- Trocar o bloco .case-frame por um print do site e o href pelo endereço real -->
+        <a class="case" href="https://glassmaster.pages.dev" target="_blank" rel="noopener">
+          <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><img src="portfolio/glassmaster.webp" alt="Página inicial do site da GlassMaster Cleaning, com uma casa de vidro e piscina e a frase Clean glass. Clear results." width="960" height="600" loading="lazy"></div>
+          <h3>GlassMaster Cleaning</h3>
+          <p><span class="pt">Limpeza de vidros na Flórida (EUA) · site em inglês com orçamento guiado por serviço, enviado por SMS ou WhatsApp</span><span class="en">Window cleaning in Florida · step-by-step estimate for each service, sent by text or WhatsApp</span></p>
+          <span class="case-link"><span class="pt">Ver site →</span><span class="en">Visit site →</span></span>
+        </a>
         <a class="case" href="https://maja-kids.pages.dev" target="_blank" rel="noopener">
           <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><img src="portfolio/maja-kids.webp" alt="Página inicial do site da Maja Kids, com um castelo inflável e o botão Monte sua festa" width="960" height="600" loading="lazy"></div>
           <h3>Maja Kids</h3>
           <p><span class="pt">Locação de brinquedos · catálogo animado e festa montada direto no WhatsApp</span><span class="en">Party rentals · animated catalog and party booked straight on WhatsApp</span></p>
           <span class="case-link"><span class="pt">Ver site →</span><span class="en">Visit site →</span></span>
         </a>
+        <a class="case" href="https://atual-ensino.pages.dev" target="_blank" rel="noopener">
+          <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><img src="portfolio/atual-ensino.webp" alt="Página inicial do site do Atual Sistema de Ensino, em estilo caderno amarelo e preto, com a frase Educação que transforma" width="960" height="600" loading="lazy"></div>
+          <h3>Atual Sistema de Ensino</h3>
+          <p><span class="pt">Escola de Ensino Médio · visual de caderno, mapa das cidades da região e perguntas que viram mensagem no WhatsApp</span><span class="en">High school · notebook-style design, regional map and a quick quiz that becomes a WhatsApp message</span></p>
+          <span class="case-link"><span class="pt">Ver site →</span><span class="en">Visit site →</span></span>
+        </a>
         <a class="case" href="https://nora-pinho-estetica.pages.dev" target="_blank" rel="noopener">
-          <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><img src="portfolio/nora-pinho.webp" alt="Página inicial do site da Nora Pinho Estética, com a frase Pele lisa, livre de pelos e mais confiança para você" width="960" height="600" loading="lazy"></div>
+          <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><img src="portfolio/nora-pinho.webp" alt="Página inicial do site da Nora Pinho Estética, com a foto da Nora e a frase Pele lisa, menos pelos e mais confiança para você" width="960" height="600" loading="lazy"></div>
           <h3>Nora Pinho Estética</h3>
           <p><span class="pt">Depilação a laser · mapa do corpo para escolher as áreas e agendar pelo WhatsApp</span><span class="en">Laser hair removal · body map to pick areas and book on WhatsApp</span></p>
           <span class="case-link"><span class="pt">Ver site →</span><span class="en">Visit site →</span></span>
-        </a>
-        <a class="case" href="#portfolio">
-          <div class="case-frame"><div class="browser-top"><i></i><i></i><i></i></div><span>Glass Master</span></div>
-          <h3>Glass Master</h3>
-          <p><span class="pt">Site em produção · em breve no ar</span><span class="en">Website in progress · launching soon</span></p>
         </a>
       </div>
     </div>
