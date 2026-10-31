@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://pine-web-site.pages.dev/</loc><lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://pine-web-site.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pine-web-site.pages.dev/?lang=en"/>
+  </url>
+  <url>
+    <loc>https://pine-web-site.pages.dev/?lang=en</loc><lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://pine-web-site.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://pine-web-site.pages.dev/?lang=en"/>
+  </url>
+  <url><loc>https://pine-web-site.pages.dev/privacidade.html</loc><lastmod>2026-10-31</lastmod></url>
+</urlset>
