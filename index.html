@@ -36,7 +36,7 @@
    "url": "https://pine-web-site.pages.dev/",
    "logo": "https://pine-web-site.pages.dev/pineweb-simbolo-clara.svg",
    "image": "https://pine-web-site.pages.dev/compartilhar.jpg",
-   "description": "Criação, publicação e manutenção de sites para pequenos negócios no Brasil e nos Estados Unidos, em português e inglês.",
+   "description": "Criação, publicação e hospedagem de sites para pequenos negócios no Brasil e nos Estados Unidos, em português e inglês.",
    "email": "pineweb1@gmail.com",
    "telephone": "+55-33-99810-4096",
    "areaServed": [
@@ -64,16 +64,8 @@
       "@type": "Offer",
       "itemOffered": {
        "@type": "Service",
-       "name": "Só o site",
-       "description": "Site sob medida, pensado para o celular, com 2 rodadas de revisão e entrega dos arquivos. Pagamento único."
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Site + hospedagem + manutenção",
-       "description": "Site sob medida, hospedagem, HTTPS, backup, atualizações e mudanças mensais, com mensalidade."
+       "name": "Site com hospedagem grátis",
+       "description": "Site sob medida, pensado para o celular, com 2 rodadas de revisão e hospedagem grátis depois da compra, sem mensalidade. Mudanças depois da segunda revisão são cobradas à parte."
       }
      }
     ]
@@ -100,10 +92,10 @@
     },
     {
      "@type": "Question",
-     "name": "Posso cancelar o plano mensal?",
+     "name": "Tem mensalidade?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Pode. Depois da fidelidade de 3 ou 6 meses, é só avisar com 30 dias de antecedência, sem multa. Você fica com o site, o domínio e todos os acessos."
+      "text": "Não. Depois da compra, a hospedagem é por nossa conta e o site fica no ar sem mensalidade. Você paga só a renovação anual do domínio e as mudanças que pedir depois da segunda revisão."
      }
     },
     {
@@ -242,6 +234,7 @@ nav a:hover { opacity: 1; color: var(--broto) }
 
 /* Planos */
 .plans { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: stretch; max-width: 920px }
+.plans.single { grid-template-columns: 1fr; max-width: 560px }
 .plan { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 30px; display: grid; grid-template-rows: auto auto auto 1fr auto; gap: 14px }
 .plan.featured { background: var(--floresta); color: var(--nevoa); border-color: var(--floresta); position: relative }
 .plan .tag { justify-self: start; font: 600 12px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; padding: 7px 11px; border-radius: 999px; background: var(--soft); color: var(--accent) }
@@ -383,8 +376,8 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
           <p><span class="pt">Site preparado para buscas e perfil no Google Maps configurado, para quem procura achar você.</span><span class="en">Search-ready pages and a set-up Google Business profile, so people looking for you can find you.</span></p>
         </div>
         <div class="service">
-          <h3><span class="pt">Cuidado todo mês</span><span class="en">Monthly care</span></h3>
-          <p><span class="pt">No plano com manutenção, hospedagem, segurança, backup e as pequenas alterações do dia a dia ficam com a gente.</span><span class="en">On our care plan, hosting, security, backups and everyday small updates are all on us.</span></p>
+          <h3><span class="pt">Hospedagem grátis</span><span class="en">Free hosting</span></h3>
+          <p><span class="pt">Depois da compra, a gente coloca e mantém o seu site no ar, seguro (HTTPS), sem mensalidade.</span><span class="en">Once you buy, we put your site online and keep it there, secure (HTTPS), with no monthly fee.</span></p>
         </div>
       </div>
     </div>
@@ -408,12 +401,12 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
             <article class="slide" data-step="0">
               <p class="count"><span class="pt">Passo 1 de 6</span><span class="en">Step 1 of 6</span></p>
               <h3><span class="pt">Conversa</span><span class="en">Say hello</span></h3>
-              <p><span class="pt">Você manda uma mensagem ou e-mail contando sobre o seu negócio, e a gente apresenta os dois planos. É aqui que a semente é plantada.</span><span class="en">Send us an email or message about your business, and we walk you through our two plans. This is where the seed gets planted.</span></p>
+              <p><span class="pt">Você manda uma mensagem ou e-mail contando sobre o seu negócio, e a gente explica como funciona. É aqui que a semente é plantada.</span><span class="en">Send us an email or message about your business, and we walk you through how it works. This is where the seed gets planted.</span></p>
             </article>
             <article class="slide" data-step="1" hidden>
               <p class="count"><span class="pt">Passo 2 de 6</span><span class="en">Step 2 of 6</span></p>
               <h3><span class="pt">Formulário</span><span class="en">Quick form</span></h3>
-              <p><span class="pt">Você escolhe o plano e responde um formulário curto sobre o negócio. Na hora chega no seu e-mail o link de uma pasta só sua para mandar fotos, logo e textos.</span><span class="en">You pick a plan and answer a short form about your business. Right away you get a link to your own folder to upload photos, logo and text.</span></p>
+              <p><span class="pt">Você responde um formulário curto sobre o negócio. Na hora chega no seu e-mail o link de uma pasta só sua para mandar fotos, logo e textos.</span><span class="en">You answer a short form about your business. Right away you get a link to your own folder to upload photos, logo and text.</span></p>
             </article>
             <article class="slide" data-step="2" hidden>
               <p class="count"><span class="pt">Passo 3 de 6</span><span class="en">Step 3 of 6</span></p>
@@ -428,12 +421,12 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
             <article class="slide" data-step="4" hidden>
               <p class="count"><span class="pt">Passo 5 de 6</span><span class="en">Step 5 of 6</span></p>
               <h3><span class="pt">Publicação</span><span class="en">Launch</span></h3>
-              <p><span class="pt">Depois da sua aprovação e dos 50% finais, o site vai ao ar no seu domínio. No plano 2 a gente hospeda e publica. No plano 1 você recebe os arquivos e a gente ajuda a publicar.</span><span class="en">Once you approve and pay the final 50%, your site goes live on your domain. On Plan 2 we host and launch it. On Plan 1 you get the files and we help you launch.</span></p>
+              <p><span class="pt">Depois da sua aprovação e dos 50% finais, a gente publica o site no seu domínio e cuida da hospedagem, de graça.</span><span class="en">Once you approve and pay the final 50%, we launch your site on your domain and host it for free.</span></p>
             </article>
             <article class="slide" data-step="5" hidden>
               <p class="count"><span class="pt">Passo 6 de 6</span><span class="en">Step 6 of 6</span></p>
-              <h3><span class="pt">Manutenção</span><span class="en">Ongoing care</span></h3>
-              <p><span class="pt">No plano 2, a gente mantém o site no ar, seguro e atualizado, e faz as mudanças do mês enquanto o seu negócio cresce.</span><span class="en">On Plan 2 we keep your site online, secure and up to date, and handle your monthly changes while your business grows.</span></p>
+              <h3><span class="pt">No ar</span><span class="en">Staying online</span></h3>
+              <p><span class="pt">A gente mantém o site no ar sem mensalidade. Se um dia quiser mudar algo, é só pedir: cada mudança tem um valor fixo, combinado antes.</span><span class="en">We keep your site online with no monthly fee. If you ever want something changed, just ask: each change has a fixed price, agreed up front.</span></p>
             </article>
           </div>
           <div class="show-nav">
@@ -447,7 +440,7 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
             <li><button type="button" data-go="2"><span class="pt">Orçamento</span><span class="en">Quote</span></button></li>
             <li><button type="button" data-go="3"><span class="pt">Criação</span><span class="en">Design</span></button></li>
             <li><button type="button" data-go="4"><span class="pt">Publicação</span><span class="en">Launch</span></button></li>
-            <li><button type="button" data-go="5"><span class="pt">Manutenção</span><span class="en">Care</span></button></li>
+            <li><button type="button" data-go="5"><span class="pt">No ar</span><span class="en">Online</span></button></li>
           </ol>
         </div>
       </div>
@@ -457,40 +450,27 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
   <section id="planos">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow"><span class="pt">Planos</span><span class="en">Plans</span></span>
-        <h2><span class="pt">Dois jeitos de ter o seu site</span><span class="en">Two ways to get your website</span></h2>
+        <span class="eyebrow"><span class="pt">Como cobramos</span><span class="en">Pricing</span></span>
+        <h2><span class="pt">Seu site no ar, sem mensalidade</span><span class="en">Your site online, no monthly fee</span></h2>
         <p><span class="pt">Todo site sai seguro (HTTPS), com política de privacidade, pensado para acessibilidade e com contrato por escrito.</span><span class="en">Every site launches secure (HTTPS), with a privacy policy, built with accessibility in mind and backed by a written contract.</span></p>
       </div>
-      <div class="plans">
-        <article class="plan">
-          <span class="tag"><span class="pt">Plano 1</span><span class="en">Plan 1</span></span>
-          <h3><span class="pt">Só o site</span><span class="en">Website only</span></h3>
-          <p class="for"><span class="pt">A gente cria o site e você cuida da hospedagem e do domínio. Pagamento único.</span><span class="en">We build the site and you handle hosting and the domain. One-time payment.</span></p>
+      <div class="plans single">
+        <article class="plan featured">
+          <span class="tag"><span class="pt">Pagamento único</span><span class="en">One-time payment</span></span>
+          <h3><span class="pt">Site + hospedagem grátis</span><span class="en">Website + free hosting</span></h3>
+          <p class="for"><span class="pt">A gente cria o site, publica no seu domínio e mantém no ar de graça. O site continua sendo seu.</span><span class="en">We build your site, launch it on your domain and keep it online for free. The site is still yours.</span></p>
           <ul>
             <li><span><span class="pt">Site sob medida, pensado para o celular</span><span class="en">Custom website, made for phones</span></span></li>
             <li><span><span class="pt">Link de teste com 2 rodadas de revisão</span><span class="en">Preview link with 2 rounds of changes</span></span></li>
-            <li><span><span class="pt">Entrega dos arquivos e ajuda para colocar no ar no seu domínio</span><span class="en">Files delivered and help going live on your domain</span></span></li>
-            <li><span><span class="pt">Alterações depois da entrega são orçadas à parte</span><span class="en">Changes after delivery are quoted separately</span></span></li>
-          </ul>
-          <p class="price"><span class="pt">Valor sob consulta</span><span class="en">Price on request</span></p>
-        </article>
-        <article class="plan featured">
-          <span class="tag"><span class="pt">Plano 2</span><span class="en">Plan 2</span></span>
-          <h3><span class="pt">Site + hospedagem + manutenção</span><span class="en">Website + hosting + care</span></h3>
-          <p class="for"><span class="pt">A gente cria, hospeda e cuida do site todo mês. O site continua sendo seu.</span><span class="en">We build, host and look after your site every month. The site is still yours.</span></p>
-          <ul>
-            <li><span><span class="pt">Site sob medida com 2 rodadas de revisão</span><span class="en">Custom website with 2 rounds of changes</span></span></li>
-            <li><span><span class="pt">Hospedagem e publicação feitas por nós</span><span class="en">Hosting and launch handled by us</span></span></li>
-            <li><span><span class="pt">Site seguro (HTTPS), backup e atualizações</span><span class="en">Secure (HTTPS), backups and updates</span></span></li>
-            <li><span><span class="pt">1 mudança grande e 3 pequenas por mês</span><span class="en">1 big change and 3 small changes a month</span></span></li>
-            <li><span><span class="pt">O primeiro mês de manutenção já vem incluso na criação</span><span class="en">Your first month of care is included with the build</span></span></li>
-            <li><span><span class="pt">Fidelidade de 3 ou 6 meses. Depois, renova mês a mês</span><span class="en">3- or 6-month commitment, then month to month</span></span></li>
+            <li><span><span class="pt">Publicação no seu domínio feita por nós</span><span class="en">We launch it on your domain</span></span></li>
+            <li><span><span class="pt">Hospedagem grátis e site seguro (HTTPS), sem mensalidade</span><span class="en">Free hosting and a secure site (HTTPS), no monthly fee</span></span></li>
+            <li><span><span class="pt">Depois da 2ª revisão, cada mudança é cobrada à parte</span><span class="en">After the 2nd round, each change is charged separately</span></span></li>
           </ul>
           <p class="price"><span class="pt">Valor sob consulta</span><span class="en">Price on request</span></p>
         </article>
       </div>
       <div class="rules">
-        <p><span class="pt">Cada plano tem um valor para site simples e outro para site com sistema (back-end), na criação e na mensalidade. O valor exato vem no orçamento. A criação é paga em duas partes: 50% para começar e 50% na entrega. Mudança pequena é trocar texto, cor, foto, preço, telefone, horário ou link. Mudança grande é mudar a ordem das seções, criar ou refazer uma seção, ou adicionar uma página. Mudanças não usadas no mês não acumulam. Funcionalidades novas, como agendamento ou login, recebem um orçamento separado.</span><span class="en">Each plan has one price for a simple site and another for a site with a back-end, both for creation and the monthly fee. The exact price comes in your quote. Creation is paid in two parts: 50% to start and 50% on delivery. A small change is new text, color, photo, price, phone, hours or link. A big change is reordering sections, adding or rebuilding a section, or adding a page. Unused monthly changes don't roll over. New features, like booking or logins, are quoted separately.</span></p>
+        <p><span class="pt">O valor muda se o site for simples ou tiver sistema (back-end), e vem fechado no orçamento. A criação é paga em duas partes: 50% para começar e 50% na entrega. O domínio fica no seu nome e você paga só a renovação anual dele. Depois da segunda revisão, nenhuma mudança está inclusa: cada uma é paga, com valor combinado antes. Mudança pequena é trocar texto, cor, foto, preço, telefone, horário ou link. Mudança grande é mudar a ordem das seções, criar ou refazer uma seção, ou adicionar uma página. Funcionalidades novas, como agendamento ou login, recebem um orçamento separado.</span><span class="en">The price depends on whether your site is simple or has a back-end, and is fixed in your quote. Creation is paid in two parts: 50% to start and 50% on delivery. The domain is in your name and you only pay its yearly renewal. After the second round of changes, no further changes are included: each one is paid, at a price agreed up front. A small change is new text, color, photo, price, phone, hours or link. A big change is reordering sections, adding or rebuilding a section, or adding a page. New features, like booking or logins, are quoted separately.</span></p>
       </div>
     </div>
   </section>
@@ -546,8 +526,8 @@ footer .wrap { padding-block: 26px; display: flex; flex-wrap: wrap; justify-cont
           <p><span class="pt">Sim. O endereço do site (por exemplo, seunegocio.com.br) é registrado no seu nome.</span><span class="en">Yes. Your web address (for example, yourbusiness.com) is registered in your name.</span></p>
         </details>
         <details>
-          <summary><span class="pt">Posso cancelar o plano mensal?</span><span class="en">Can I cancel my monthly plan?</span></summary>
-          <p><span class="pt">Pode. Depois da fidelidade de 3 ou 6 meses, é só avisar com 30 dias de antecedência, sem multa. Você fica com o site, o domínio e todos os acessos.</span><span class="en">Yes. After your 3- or 6-month commitment, just give us 30 days' notice, with no fee. You keep your site, your domain and all the logins.</span></p>
+          <summary><span class="pt">Tem mensalidade?</span><span class="en">Is there a monthly fee?</span></summary>
+          <p><span class="pt">Não. Depois da compra, a hospedagem é por nossa conta e o site fica no ar sem mensalidade. Você paga só a renovação anual do domínio e as mudanças que pedir depois da segunda revisão.</span><span class="en">No. Once you buy, hosting is on us and your site stays online with no monthly fee. You only pay the yearly domain renewal and any changes you ask for after the second round.</span></p>
         </details>
         <details>
           <summary><span class="pt">Vocês atendem fora do Brasil?</span><span class="en">Do you work with US businesses?</span></summary>
