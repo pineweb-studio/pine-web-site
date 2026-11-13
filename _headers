@@ -10,3 +10,6 @@
 
 /guias/*
   X-Robots-Tag: noindex
+
+/social/*
+  X-Robots-Tag: noindex
