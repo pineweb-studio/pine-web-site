@@ -5,8 +5,16 @@ from PIL import Image
 REPO = pathlib.Path(sys.argv[1])
 OUT = REPO / "social"
 TMP = pathlib.Path("/home/claude/social-build/tmp")
-OUT.mkdir(exist_ok=True); TMP.mkdir(exist_ok=True)
-LOGO = (REPO / "pineweb-simbolo-clara.svg").as_uri()
+OUT.mkdir(exist_ok=True); TMP.mkdir(parents=True, exist_ok=True)
+# Símbolo desenhado inline (mesmo do cabeçalho do site). Nunca aplicar filter no logo:
+# o brightness() escurecia a janela clara e o pinheiro virava um borrão escuro.
+def logo_svg(borda):
+    return ('<svg viewBox="0 0 120 120" aria-hidden="true">'
+            f'<rect x="7" y="11" width="106" height="98" rx="20" fill="#F4F6F1" stroke="{borda}" stroke-width="6"/>'
+            '<path d="M7 36 H113" stroke="#163A2C" stroke-width="4"/>'
+            '<circle cx="23" cy="24" r="4" fill="#163A2C"/><circle cx="35" cy="24" r="4" fill="#163A2C"/><circle cx="47" cy="24" r="4" fill="#163A2C"/>'
+            '<polygon points="60,42 74,58 46,58" fill="#2E7D5B"/><polygon points="60,51 81,75 39,75" fill="#2E7D5B"/>'
+            '<polygon points="60,63 88,94 32,94" fill="#2E7D5B"/><rect x="55" y="94" width="10" height="9" fill="#163A2C"/></svg>')
 
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
@@ -16,7 +24,7 @@ body{font-family:'Inter Display','Inter',sans-serif;position:relative;padding:96
 .light{background:#F4F6F1;color:#1C2420}
 .amber{background:#F2A541;color:#163A2C}
 .brand{position:absolute;left:88px;bottom:72px;display:flex;align-items:center;gap:16px;font-weight:700;font-size:30px;letter-spacing:-.5px}
-.brand img{width:52px;height:52px}
+.brand svg{width:56px;height:56px;flex:none}
 .page{position:absolute;right:88px;bottom:80px;font-size:26px;opacity:.6;font-weight:500}
 .eyebrow{font-size:28px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:36px}
 .dark .eyebrow{color:#8FD694} .light .eyebrow{color:#2E7D5B}
@@ -45,7 +53,8 @@ p{font-size:40px;line-height:1.35;margin-top:40px;font-weight:400}
 """
 
 def brand(theme):
-    logo = f'<img src="{LOGO}">' if theme == "dark" else f'<img src="{LOGO}" style="filter:brightness(.25)">'
+    # Fundo escuro: borda verde-broto (como no site). Fundos claros/âmbar: borda floresta.
+    logo = logo_svg("#8FD694" if theme == "dark" else "#163A2C")
     return f'<div class="brand">{logo}PineWeb</div>'
 
 def render(name, theme, body, page=None, swipe=False):
